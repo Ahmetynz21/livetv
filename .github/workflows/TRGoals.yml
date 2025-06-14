@@ -52,12 +52,19 @@ jobs:
 
       
 
-      - name: Daddylive
-        run: python daddylive.py
+      - name: daddylive.m3u dosyasını oluştur 
+        run: |
+          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/refs/heads/main/stdaddy.m3u" | \
+          sed -e 's|https://sinelive-sineproxy.hf.space/proxy/|https://kerimmkirac-daddylive.hf.space/proxy/|g' \
+              
+          > daddylive.m3u
 
-      
-      - name: Daddylive Events
-        run: python daddyliveevents.py
+      - name: daddyliveevents.m3u dosyasını oluştur 
+        run: |
+          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/refs/heads/main/stevents.m3u" | \
+          sed -e 's|https://sinelive-sineproxy.hf.space/proxy/|https://kerimmkirac-daddyliveevents.hf.space/proxy/|g' \
+              
+          > daddyliveevents.m3u
 
 
 
