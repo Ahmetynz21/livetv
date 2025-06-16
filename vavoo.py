@@ -3,7 +3,7 @@ import re
 
 URL = "https://vavoo.to/channels"
 PROXY_BASE = "https://falco26-flc26prx.hf.space/proxy/m3u?url=https://vavoo.to/play/{}/index.m3u8"
-LOGO_URL = "https://raw.githubusercontent.com/kerimmkirac/CanliTvListe/refs/heads/main/vavoo.png"
+LOGO_URL = "https://raw.githubusercontent.com/reelman543/ES26edt/refs/heads/main/vavoo.png"
 OUTPUT_FILE = "vavoo.m3u"
 
 TURKISH_CHAR_MAP = str.maketrans({
