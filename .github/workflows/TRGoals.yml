@@ -39,29 +39,29 @@ jobs:
       
 
       - name: Alive 1
-        run: curl https://kerimmkirac-dproxy.hf.space
+        run: curl https://falco26-flc26prx.hf.space
 
       - name: Alive 2
-        run: curl https://kerimmkirac-daddylive.hf.space
+        run: curl https://ES26edt-daddylive.hf.space
 
       - name: Alive 3
-        run: curl https://kerimmkirac-daddyliveevents.hf.space
+        run: curl https://ES26edt-daddyliveevents.hf.space
 
       - name: Alive 4
-        run: curl https://kerimmkirac-vavoo.hf.space/
+        run: curl https://ES26edt-vavoo.hf.space/
 
       
 
       - name: daddylive.m3u dosyasını oluştur
         run: |
          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/main/stdaddy.m3u" | \
-          sed 's|https://sinelive-sineproxy.hf.space/proxy/|https://kerimmkirac-daddylive.hf.space/proxy/|g' \
+          sed 's|https://falco26-flc26prx.hf.space/proxy/|https://ES26edt-daddylive.hf.space/proxy/|g' \
           > daddylive.m3u
 
       - name: daddyliveevents.m3u dosyasını oluştur
         run: |
          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/main/stevents.m3u" | \
-         sed 's|https://sinelive-sineproxy.hf.space/proxy/|https://kerimmkirac-daddyliveevents.hf.space/proxy/|g' \
+         sed 's|https://falco26-flc26prx.hf.space/proxy/|https://ES26edt-daddyliveevents.hf.space/proxy/|g' \
          > daddyliveevents.m3u
 
 
