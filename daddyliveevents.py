@@ -3,7 +3,7 @@ from urllib.request import urlopen
 from collections import defaultdict
 
 
-url = "https://kerimmkirac-daddyliveevents.hf.space/playlist/events"
+url = "https://ES26edt-daddyliveevents.hf.space/playlist/events"
 response = urlopen(url)
 data = response.read().decode("utf-8")
 
