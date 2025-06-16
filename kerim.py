@@ -56,12 +56,12 @@ def parse_m3u(file_path):
                 mevcut_kanal_adi = None
     return kanallar
 
-def update_kerim_m3u():
+def update_falco_m3u():
     yeni_kanallar = parse_m3u('yeni.m3u')
-    hedef_dosya = 'Kanallar/kerim.m3u'
+    hedef_dosya = 'Kanallar/falco.m3u'
 
     if not os.path.exists(hedef_dosya):
-        print("kerim.m3u bulunamadı. Yeni oluşturuluyor...")
+        print("falco.m3u bulunamadı. Yeni oluşturuluyor...")
         os.makedirs('Kanallar', exist_ok=True)
         with open(hedef_dosya, 'w', encoding='utf-8') as f:
             f.write("#EXTM3U\n")
@@ -97,7 +97,7 @@ def update_kerim_m3u():
     with open(hedef_dosya, 'w', encoding='utf-8') as f:
         f.writelines(guncellenmis)
 
-    print("✅ kerim.m3u başarıyla güncellendi!")
+    print("✅ falco.m3u başarıyla güncellendi!")
 
 if __name__ == "__main__":
-    update_kerim_m3u()
+    update_falco_m3u()
