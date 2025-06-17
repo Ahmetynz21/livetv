@@ -23,18 +23,18 @@ jobs:
           python-version: 3.11.8
           
       - name: Gereksinimleri Kur
-        run: |
+      - run: |
           python -m pip install --upgrade pip
           pip install -U setuptools wheel Kekik httpx parsel requests
           
       - name: TRGoals.py Çalıştır
-        run: python TRGoals.py
+      -  run: python TRGoals.py
 
       - name: TRGoal.py Çalıştır
-        run: python trgoal.py
+      -  run: python trgoal.py
         
       - name: MonoTV.py Çalıştır
-        run: python MonoTV.py
+      -  run: python MonoTV.py
         
       - name: daddylive.py Çalıştır
       - run: python daddylive..py
@@ -50,16 +50,16 @@ jobs:
       
 
       - name: Alive 1
-        run: curl https://falco26-flc26prx.hf.space
+      - run: curl https://falco26-flc26prx.hf.space
 
       - name: Alive 2
-        run: curl https://ES26-1-daddylive.hf.space
+      - run: curl https://ES26-1-daddylive.hf.space
 
       - name: Alive 3
-        run: curl https://ES26-1-daddyliveevents.hf.space
+      - run: curl https://ES26-1-daddyliveevents.hf.space
 
       - name: Alive 4
-        run: curl https://ES26-1-vavoo.hf.space/
+      - run: curl https://ES26-1-vavoo.hf.space/
 
      
 
