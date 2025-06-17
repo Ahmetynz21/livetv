@@ -28,7 +28,7 @@ jobs:
         run: pip install requests
 
       - name: Alive 1
-        run: curl https://reelman543-vavoo.hf.space/
+        run: curl https://ES26-1-vavoo.hf.space/
 
       - name: Vavoo Tr
         run: python vavoo.py
