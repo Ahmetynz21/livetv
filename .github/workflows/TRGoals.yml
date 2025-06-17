@@ -36,32 +36,43 @@ jobs:
       - name: MonoTV.py Çalıştır
         run: python MonoTV.py
         
+      - name: daddylive.py Çalıştır
+      - run: python daddylive..py
+
+      - name: daddyliveevnets.py
+      - run: python daddyliveevents.py
+
+      - name: selçuk.py Çalıştır
+      - run: python selçuk.py
+
+      - name: sporcafe.py Çalıştır
+      - run: python sporcafe.py
       
 
       - name: Alive 1
         run: curl https://falco26-flc26prx.hf.space
 
       - name: Alive 2
-        run: curl https://ES26edt-daddylive.hf.space
+        run: curl https://ES26-1-daddylive.hf.space
 
       - name: Alive 3
-        run: curl https://ES26edt-daddyliveevents.hf.space
+        run: curl https://ES26-1-daddyliveevents.hf.space
 
       - name: Alive 4
-        run: curl https://ES26edt-vavoo.hf.space/
+        run: curl https://ES26-1-vavoo.hf.space/
 
       
 
       - name: daddylive.m3u dosyasını oluştur
         run: |
          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/main/stdaddy.m3u" | \
-          sed 's|https://falco26-flc26prx.hf.space/proxy/|https://ES26edt-daddylive.hf.space/proxy/|g' \
+          sed 's|https://falco26-flc26prx.hf.space/proxy/|https://reelman543-daddylive.hf.space/proxy/|g' \
           > daddylive.m3u
 
       - name: daddyliveevents.m3u dosyasını oluştur
         run: |
          curl -s "https://raw.githubusercontent.com/ActionHelper/stforum/main/stevents.m3u" | \
-         sed 's|https://falco26-flc26prx.hf.space/proxy/|https://ES26edt-daddyliveevents.hf.space/proxy/|g' \
+         sed 's|https://falco26-flc26prx.hf.space/proxy/|https://reelman543-daddyliveevents.hf.space/proxy/|g' \
          > daddyliveevents.m3u
 
 
