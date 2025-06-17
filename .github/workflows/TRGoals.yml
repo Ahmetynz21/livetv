@@ -59,7 +59,7 @@ jobs:
       - run: curl https://ES26-1-daddyliveevents.hf.space
 
       - name: Alive 4
-      - run: curl https://ES26-1-vavoo.hf.space/
+      - run: curl https://ES26-edt-vavoo.hf.space/
 
      
 
