@@ -37,7 +37,7 @@ jobs:
       - name: M3U Güncellemelerini Yap
         run: |
           
-          python kerim.py
+          python falco.py
 
       - name: Değişiklik Kontrolü
         id: degisiklik_kontrol
