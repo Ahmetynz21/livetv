@@ -3,6 +3,8 @@ import re
 
 URL = "https://vavoo.to/channels"
 PROXY_BASE = "https://falco26-flc26prx.hf.space/proxy/m3u?
+PROXY_BASE = "https://falco26-flc26prx.hf.space/proxy?url=
+PROXY_BASE = "https://latte-proxy2.hf.space/proxy/m3u?url=
 url=https://vavoo.to/play/{}/index.m3u8"
 LOGO_URL = "https://raw.githubusercontent.com/reelman543/ES26-edt/refs/heads/main/vavoo.png"
 OUTPUT_FILE = "vavoo.m3u"
